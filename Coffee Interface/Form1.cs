@@ -13,7 +13,9 @@ namespace Coffee_Interface
     public partial class CoffeeInterface : Form
     {
         string cFlavor = "";
-        string cAddons = "";
+        string cAddons1 = "";
+        string cAddons2 = "";
+        string cAddons3 = "";
         public CoffeeInterface()
         {
             InitializeComponent();
@@ -30,8 +32,9 @@ namespace Coffee_Interface
             GetFlavors(radioButton2);
             GetFlavors(radioButton3);
             //GetAddons(comboBox1);
-           //GetAddons(comboBox2);
-           //GetAddons(comboBox3);
+            //GetAddons(comboBox2);
+            //GetAddons(comboBox3);
+
         }
 
         private void GetFlavors(RadioButton rdoButton)
@@ -47,8 +50,18 @@ namespace Coffee_Interface
         {
             if(CheckB.Checked)
             {
-               
+                cAddons1 =" and " + comboBox1.Text; //Suager
+                cAddons2 = " with " + comboBox2.Text; //Cream
+                cAddons3 = " with " + comboBox3.Text; //Shot
+                GetPrice();
+
+
             }
+        }
+
+        private void GetPrice()
+        {
+            MessageBox.Show(cFlavor + cAddons2 + cAddons1 + cAddons3);
         }
        
     }
