@@ -23,27 +23,21 @@ namespace Coffee_Interface
             
         }
 
-        //private void GetFlavors(RadioButton rdoButton)
-        //{
-            //if (rdoButton.Checked)
-           // {
-                //cFlavor = rdoButton.Text;
-               // MessageBox.Show(rdoButton.Text);
-          //  }
-
-       // }
-
         private void order_Click(object sender, EventArgs e)
         {
-             private void GetFlavors(RadioButton rdoButton)
-            {
-                if (rdoButton.Checked)
-                {
-                    //cFlavor = rdoButton.Text;
-                    MessageBox.Show(rdoButton.Text);
-                }
+            GetFlavors(radioButton1);
+            GetFlavors(radioButton2);
+            GetFlavors(radioButton3);
+        }
 
+        private void GetFlavors(RadioButton rdoButton)
+        {
+            if (rdoButton.Checked)
+            {
+                //cFlavor = rdoButton.Text;
+                MessageBox.Show(rdoButton.Text);
             }
+
         }
     }
 }
