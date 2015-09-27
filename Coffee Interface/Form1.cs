@@ -31,6 +31,7 @@ namespace Coffee_Interface
             GetFlavors(radioButton1);
             GetFlavors(radioButton2);
             GetFlavors(radioButton3);
+            //GetPrice(); //Debugging
             //GetAddons(comboBox1);
             //GetAddons(comboBox2);
             //GetAddons(comboBox3);
@@ -61,7 +62,7 @@ namespace Coffee_Interface
 
         private void GetPrice()
         {
-            MessageBox.Show(cFlavor + cAddons2 + cAddons1 + cAddons3);
+            MessageBox.Show(cFlavor + cAddons2 + cAddons1 + cAddons3 + " That will be $500");
         }
        
     }
